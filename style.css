@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Vazirmatn", sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+.container{
+    background-color: #f2f5f8;
+    padding: 24px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    background-color: #1b314d;
+    color: white;
+}
+
+.nav-link{
+    color: white;
+    margin-inline: 10px;
+}
+
+.intro{
+    background-color: white;
+    border: 2px solid #dfe4eb;
+    border-radius: 10px;
+    padding: 24px;
+    line-height: 52px;
+}
+
+.intro-title{
+    color: #1b314d;
+}
+
+.description{
+    color: #4e535c;
+}
+
+.activities{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #2b4a6e;
+    margin: 24px 0;
+    padding: 16px;
+}
+
+.activity{
+    background-color: #f4f5f9;
+    line-height: 42px;
+    padding: 10px;
+    border-right: 4px solid #2b4a6e;
+}
+
