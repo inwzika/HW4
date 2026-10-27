@@ -206,3 +206,29 @@ footer {
     align-items: center;
 }
 
+@media (max-width: 500px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+    }
+}
+
+@media (min-width:1280px) {
+    .first-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .media-1280 {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 16px;
+    }
+
+    .form-request {
+        max-width: 100%;
+    }
+}
