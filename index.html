@@ -10,39 +10,211 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h2 class="header-title">خانۀ فرهنگ روشن</h2>
         <nav>
-            <a href="" class="nav-link">زمان‌های همکاری</a>
-            <a href="" class="nav-link">درخواست همکاری</a>
+            <a href="#collab-times" class="nav-link">زمان‌های همکاری</a>
+            <a href="#request" class="nav-link">درخواست همکاری</a>
         </nav>
     </header>
 
     <div class="container">
-        <section class="intro">
-            <h1 class="intro-title">درخواست همکاری داوطلبانه</h1>
-            <P class="description">برای اجرای فعالیت‌های فرهنگی محله، همکاری داوطلبانۀ تازه‌کار‌ها و افراد با تجربه را
-                می‌پذیریم. علاقۀ خود
-                را معرفی کنید تا امکان همکاری بعداََ بررسی شود.</P>
+        <div class="media-1280">
+            <div class="first-column">
+                <section class="intro">
+                    <h1 class="intro-title">درخواست همکاری داوطلبانه</h1>
+                    <P class="description">برای اجرای فعالیت‌های فرهنگی محله، همکاری داوطلبانۀ تازه‌کار‌ها و افراد با
+                        تجربه
+                        را
+                        می‌پذیریم. علاقۀ خود
+                        را معرفی کنید تا امکان همکاری بعداََ بررسی شود.</P>
+                </section>
+
+                <section class="activities">
+                    <h2 class="title">فعالیت‌ها</h2>
+                    <div class="activity">
+                        <h3 class="activity-title">آموزش</h3>
+                        <p class="description">همکاری با مربی برای آماده‌سازی تمرین و پاسخ به پرسش‌های مقدماتی هنرجویان.
+                        </p>
+                    </div>
+
+                    <div class="activity">
+                        <h3 class="activity-title">رویداد</h3>
+                        <p class="description">کمک در آماده‌کردن فضا، راهنمایی مهمانان و مرتب کردن محل پس از برنامه.</p>
+                    </div>
+
+                    <div class="activity">
+                        <h3 class="activity-title">کتابخانه</h3>
+                        <p class="description">مرتب کردن کتاب‌ها، آماده کردن فهرست معرفی و کمک به خوانندگان برای یافتن
+                            کتاب.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="collaboration-times" id="collab-times">
+                    <h2 class="title">زمان‌های همکاری</h2>
+                    <h3 class="collaboration-times-title">نمونۀ زمان‌های همکاری</h3>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>فعالیت</th>
+                                <th>روز</th>
+                                <th>بازه</th>
+                                <th>ساعت</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>آموزش</td>
+                                <td>شنبه</td>
+                                <td>صبح</td>
+                                <td>9 تا 12</td>
+                            </tr>
+
+                            <tr>
+                                <td>رویداد</td>
+                                <td>دوشنبه</td>
+                                <td>عصر</td>
+                                <td>16 تا 19</td>
+                            </tr>
+
+                            <tr>
+                                <td>کتابخانه</td>
+                                <td>چهارشنبه</td>
+                                <td>صبح</td>
+                                <td>9 تا 12</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <p class="collaboration-times-description">صبح یعنی 9 تا 12 و عصر یعنی 16 تا 19. انتخاب بازه و علاقه
+                        در
+                        فرم
+                        فقط ترجیح شماست؛ تطبیق روز، ظرفیت یا تأیید همکاری در این صفحه انجام نمی‌شود.</p>
+                </section>
+
+            </div>
+
+
+
+            <div>
+                <section class="form-request" id="request">
+                    <h2 class="title">درخواست همکاری</h2>
+                    <form>
+                        <div class="name">
+                            <label for="name" class="label">نام و نام‌خانوادگی <span
+                                    class="required">(اجباری)</span></label>
+                            <input type="text" id="name" name="name" class="input" required>
+                        </div>
+
+                        <div class="email">
+                            <label for="emial" class="label">ایمیل <span class="required">(اجباری)</span></label>
+                            <input type="email" id="email" name="email" class="input" required>
+                        </div>
+
+                        <div class="phone-number">
+                            <label for="phone-number" class="label">تلفن <span class="optional">(اختیاری)</span></label>
+                            <input type="tel" id="phone-number" name="phone-number" class="input">
+                        </div>
+
+                        <div>
+                            <fieldset>
+                                <legend id="label">بازۀ ترجیحی <span class="required">(اجباری؛ دقیقاََ یک
+                                        مورد)</span>
+                                </legend>
+
+                                <div class="time">
+                                    <input type="radio" name="time" required>
+                                    <label class="label">صبح</label>
+
+                                </div>
+
+                                <div class="time">
+                                    <input type="radio" name="time" id="evening">
+
+                                    <label for="evening" class="label">عصر</label>
+                                </div>
+
+                            </fieldset>
+                        </div>
+
+                        <div class="interests">
+                            <fieldset>
+                                <legend id="label">علاقه به فعالیت‌ها <span class="optional">(اختیاری؛ صفر تا سه
+                                        مورد)</span>
+                                </legend>
+                                <div class="interest">
+                                    <input type="checkbox" name="Interest" id="training">
+                                    <label for="training" class="label">آموزش</label>
+                                </div>
+
+                                <div class="interest">
+                                    <input type="checkbox" name="event" id="event">
+                                    <label for="event" class="label">رویداد</label>
+                                </div>
+
+
+                                <div class="interest">
+                                    <input type="checkbox" name="library" id="event">
+                                    <label for="event" class="label">کتابخانه</label>
+                                </div>
+
+
+                            </fieldset>
+                        </div>
+
+                        <div class="experience-level">
+                            <label class="label">سطح تجربه <span class="required">(اجباری)</span></label>
+                            <select>
+                                <option name="experience-level">سطح تجربه را انتخاب کنید</option>
+                                <option name="experience-level">تازه‌کار</option>
+                                <option name="experience-level">تجربۀ محدود</option>
+                                <option name="experience-level">باتجربه</option>
+                            </select>
+
+                        </div>
+
+                        <div class="descriptions">
+                            <label for="description-textfield" class="label">توضیح <span
+                                    class="optional">(اختیاری)</span></label>
+                            <textarea name="description" id="description-textfield"></textarea>
+                        </div>
+                        <p class="textarea-description">حداکثر 300 نویسه (تایپ یا paset).</p>
+
+                        <div class="rule">
+                            <input type="checkbox" name="accept-rules" id="accept-rules" required>
+                            <label for="accept-rules" class="label">قوانین همکاری را می‌پذیرم <span
+                                    class="required">(اجباری)</span></label>
+                        </div>
+
+                        <div class="notice">
+                            <p>احترام به مراجعه‌کنندگان، حفظ اطلاعات شخصی آنان و هماهنگی با مسئول فعالیت پیش از حضور
+                                لازم
+                                است.
+                            </p>
+                        </div>
+
+                        <div class="send-button">
+                            <button type="submit">ارسال درخواست آزمایشی</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+
+        <section class="contact">
+            <h2 class="title">تماس</h2>
+            <a href="#" class="email">volunteer@example.com</a>
         </section>
+        <hr>
 
-        <section class="activities">
-            <h3 class="title">فعالیت‌ها</h3>
-            <div class="activity">
-                <h4 class="activity-title">آموزش</h4>
-                <p class="description">همکاری با مربی برای آماده‌سازی تمرین و پاسخ به پرسش‌های مقدماتی هنرجویان.</p>
-            </div>
-
-            <div class="activity">
-                <h4 class="activity-title">رویداد</h4>
-                <p class="description">کمک در آماده‌کردن فضا، راهنمایی مهمانان و مرتب کردن محل پس از برنامه.</p>
-            </div>
-
-            <div class="activity">
-                <h4 class="activity-title">کتابخانه</h4>
-                <p class="description">مرتب کردن کتاب‌ها، آماده کردن فهرست معرفی و کمک به خوانندگان برای یافتن کتاب.</p>
-            </div>
-        </section>
+        <footer>
+            <p class="footer-description">خانۀ فرهنگ روشن __ نسخۀ آموزشی</p>
+        </footer>
     </div>
 </body>
 

@@ -1,65 +1,208 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Vazirmatn", sans-serif;
 }
 
-html{
+html {
     font-size: 16px;
 }
 
-.container{
-    background-color: #f2f5f8;
+.container {
+    background-color: #e2e7ec;
     padding: 24px 10px;
     display: flex;
     flex-direction: column;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     padding: 12px;
     align-items: center;
     background-color: #1b314d;
     color: white;
+    max-width: 100%;
 }
 
-.nav-link{
+.nav-link {
     color: white;
-    margin-inline: 10px;
+    margin-left: 5px;
 }
 
-.intro{
+.intro {
     background-color: white;
     border: 2px solid #dfe4eb;
     border-radius: 10px;
     padding: 24px;
-    line-height: 52px;
+    margin-bottom: 24px;
+
 }
 
-.intro-title{
+.intro-title {
     color: #1b314d;
+    margin-bottom: 5px;
 }
 
-.description{
+.description {
     color: #4e535c;
 }
 
-.activities{
+.activities,
+.collaboration-times,
+.form-request,
+.contact {
     background-color: white;
     display: flex;
     flex-direction: column;
     gap: 12px;
     color: #2b4a6e;
-    margin: 24px 0;
+    margin-bottom: 24px;
     padding: 16px;
+    border: 2px solid #dfe4eb;
+    border-radius: 10px;
 }
 
-.activity{
+.activity {
     background-color: #f4f5f9;
     line-height: 42px;
     padding: 10px;
     border-right: 4px solid #2b4a6e;
+    color: #1b314d;
+}
+
+.collaboration-times-title {
+    color: #1b314d;
+}
+
+.table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #dbe6f1;
+    color: #1b314d;
+}
+
+th,
+td {
+    border: 2px solid #c7d0db;
+    padding: 12px;
+    text-align: start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.collaboration-times-description {
+    color: #797f86;
+}
+
+.label {
+    font-size: larger;
+    font-weight: 600;
+    color: black;
+}
+
+.required {
+    color: #2b4a6e;
+}
+
+.optional {
+    color: #88909b;
+}
+
+.input,
+select,
+#description-textfield {
+    width: 100%;
+    background-color: #fafbfe;
+    border: 2px solid #c8d1dc;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    align-items: start;
+}
+
+
+fieldset {
+    border: 2px solid #c8d1dc;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.time,
+.interest {
+    display: flex;
+    gap: 16px;
+}
+
+.experience-level,
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#description-textfield {
+    padding: 50px;
+}
+
+.textarea-description {
+    color: #797f86;
+}
+
+.rule {
+    display: flex;
+    gap: 16px;
+}
+
+.notice {
+    background-color: #f7f1e6;
+    border: 2px solid #e0caa4;
+    border-right: 4px solid #b07929;
+    padding: 16px;
+}
+
+button {
+    background-color: #2b4a6e;
+    padding: 15px 20px;
+    color: white;
+    border: 2px solid #1b314d;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.email {
+    color: #1b314d;
+}
+
+hr {
+    border: 1px solid #d4dde5;
+}
+
+footer {
+    padding: 12px;
+
+}
+
+.footer-description {
+    color: #64696e;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
